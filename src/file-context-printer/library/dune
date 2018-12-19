@@ -2,5 +2,6 @@
 (library
    (name FileContextPrinter)
    (public_name file-context-printer.lib)
+   (flags (:standard -warn-error -a-27-6))
    (libraries  str re pastel.lib )
 )

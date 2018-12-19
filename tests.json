@@ -1,0 +1,17 @@
+{
+  "name": "@reason-native/tests",
+  "esy": {
+    "build": "esydune build",
+    "install": "esydune install"
+  },
+  "scripts": {
+    "test": "esy x ReasonNativeTests.exe"
+  },
+  "dependencies": {
+    "esydune": "*",
+    "@reason-native/rely": "*",
+    "@reason-native/console": "*",
+    "@reason-native/pastel": "*",
+    "@reason-native/pastel-console": "*"
+  }
+}

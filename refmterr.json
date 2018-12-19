@@ -7,6 +7,7 @@
     "@opam/re": "*",
     "@esy-ocaml/reason": "^3.0.0",
     "ocaml": " >= 4.2.0  < 4.8.0",
+    "esydune": "*",
     "@reason-native/pastel": "*",
     "@opam/yojson": "*",
     "@opam/ppx_deriving_yojson": "*",
@@ -15,14 +16,9 @@
   "author": {
     "name": "chenglou"
   },
-  "devDependencies": {
-    "@esy-ocaml/merlin": "*",
-    "ocaml": "~4.6.0",
-    "@esy-ocaml/reason": "3.3.3"
-  },
   "esy": {
-    "build": "refmterr dune build -p refmterr",
-    "install": "esy-installer refmterr.install"
+    "build": "esydune build",
+    "install": "esydune install"
   },
   "scripts": {
     "test": "esy src/refmterr/runTests.cmd"

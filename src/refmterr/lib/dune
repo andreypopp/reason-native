@@ -2,4 +2,5 @@
 (library (name Refmterr)
     (public_name refmterr.lib)
     (preprocess (pps ppx_deriving_yojson))
+    (flags (:standard -warn-error -a-27))
     (libraries yojson ppx_deriving_yojson ppx_deriving_yojson.runtime re.pcre unix pastel.lib))

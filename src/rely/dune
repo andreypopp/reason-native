@@ -1,6 +1,7 @@
 (library
    (name Rely)
    (public_name rely.lib)
+   (flags (:standard -warn-error -a-27))
    (libraries pastel.lib file-context-printer.lib unix)
 )
 (include_subdirs unqualified)

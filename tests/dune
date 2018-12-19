@@ -2,6 +2,7 @@
   (name Tests)
   ; IMPORTANT: -linkall flag is required to include all tests.
   (ocamlopt_flags -linkall -g)
+  (flags (:standard -warn-error -a-27-33))
   (libraries
     rely.lib
     pastel.lib
