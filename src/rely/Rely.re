@@ -387,6 +387,7 @@ module Make = (UserConfig: FrameworkConfig) => {
                  ),
              },
            );
+      TestSnapshot.removeUnusedSnapshots(result.testRunState.snapshotState^);
       let aggregatedResultWithSnapshotStatus = {
         ...result.aggregatedResult,
         snapshotSummary:
@@ -396,9 +397,8 @@ module Make = (UserConfig: FrameworkConfig) => {
             ),
           ),
       };
+
       let success = aggregatedResultWithSnapshotStatus.numFailedTests == 0;
-      TestSnapshot.removeUnusedSnapshots(result.testRunState.snapshotState^);
-      /* todo cleanup snapshots if failed */
       notifyReporters(r =>
         r.onRunComplete(aggregatedResultWithSnapshotStatus)
       );
