@@ -8,7 +8,7 @@ open Pastel;
 
 type matcherHintOptions = {comment: option(string)};
 
-type matcherUtils = {
+type t = {
   matcherHint:
     (
       ~matcherName: string,
