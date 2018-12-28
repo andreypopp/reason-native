@@ -12,6 +12,8 @@ include TestFrameworkConfig;
 include RunConfig;
 module MatcherUtils = MatcherUtils;
 module MatcherTypes = MatcherTypes;
+module CollectionMatchers = CollectionMatchers;
+module ListMatchers = ListMatchers;
 open Reporter;
 
 module Test = {
