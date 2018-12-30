@@ -21,6 +21,7 @@
   ],
   "esy": {
     "build": "esydune build",
+    "buildDev": "esydune build",
     "install": "esydune install"
   },
   "scripts": {
@@ -29,8 +30,8 @@
   "dependencies": {
     "esydune": "*",
     "@opam/dune": "*",
-    "@esy-ocaml/reason": "*",
     "refmterr": "*",
+    "@esy-ocaml/reason": "*",
     "ocaml": ">= 4.2.0  <= 4.7.0",
     "@reason-native/pastel": "*",
     "@reason-native/file-context-printer": "*"

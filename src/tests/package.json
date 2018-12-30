@@ -2,6 +2,7 @@
   "name": "@reason-native/tests",
   "esy": {
     "build": "esydune build",
+    "buildDev": "esydune build",
     "install": "esydune install"
   },
   "scripts": {

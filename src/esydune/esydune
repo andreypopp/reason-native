@@ -24,7 +24,11 @@ install)
   ;;
 build)
   if [ "$cur__dev" = "true" ]; then
-    run refmterr dune build --only-packages "$nameWithoutNamespace" --root .
+    if command -v refmterr >/dev/null 2>&1; then
+      run refmterr dune build --only-packages "$nameWithoutNamespace" --root .
+    else
+      run dune build --only-packages "$nameWithoutNamespace" --root .
+    fi
   else
     run dune build -p "$nameWithoutNamespace"
   fi

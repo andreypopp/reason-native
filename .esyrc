@@ -1,0 +1,13 @@
+{
+  "buildModeForDev": {
+    "link": "buildDev"
+  },
+  "workflow": {
+    "solvespec": {
+      "solveLink": "dependencies(self)+devDependencies(self)"
+    },
+    "buildspec": {
+      "buildLink": "dependencies(self)+devDependencies(self)+devDependencies(root)"
+    }
+  }
+}

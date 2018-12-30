@@ -4,6 +4,7 @@
   "description": "My Project",
   "esy": {
     "build": "esydune build",
+    "buildDev": "esydune build",
     "install": "esydune install"
   },
   "scripts": {
@@ -15,7 +16,9 @@
     "@opam/dune": "*",
     "esydune": "*",
     "@esy-ocaml/reason": "*",
-    "refmterr": "*",
     "ocaml": ">= 4.2.0  <= 4.7.0"
+  },
+  "devDependencies": {
+    "refmterr": "*"
   }
 }

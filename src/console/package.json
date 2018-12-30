@@ -5,6 +5,7 @@
   "license": "MIT",
   "esy": {
     "build": "esydune build",
+    "buildDev": "esydune build",
     "install": "esydune install"
   },
   "scripts": {

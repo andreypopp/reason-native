@@ -9,6 +9,7 @@
   "license": "MIT",
   "esy": {
     "build": "esydune build",
+    "buildDev": "esydune build",
     "install": "esydune install"
   },
   "scripts": {},
@@ -19,5 +20,8 @@
     "ocaml": ">= 4.2.0  <= 4.7.0",
     "@opam/re": "*",
     "@reason-native/pastel": "*"
+  },
+  "devDependencies": {
+    "refmterr": "*"
   }
 }

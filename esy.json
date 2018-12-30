@@ -18,18 +18,16 @@
   },
   "devDependencies": {
     "@opam/merlin": "*",
-    "ocaml": "~4.6.0",
-    "refmterr": "*",
-    "@esy-ocaml/reason": "3.3.3"
+    "ocaml": "~4.6.0"
   },
   "resolutions": {
-    "esydune": "link:./esydune.json",
-    "refmterr": "link:./refmterr.json",
-    "@reason-native/pastel": "link:./pastel.json",
-    "@reason-native/rely": "link:./rely.json",
-    "@reason-native/console": "link:./console.json",
-    "@reason-native/pastel-console": "link:./pastel-console.json",
-    "@reason-native/file-context-printer": "link:./file-context-printer.json",
-    "@reason-native/tests": "link:./tests.json"
+    "esydune": "link:./src/esydune/package.json",
+    "refmterr": "link:./src/refmterr/package.json",
+    "@reason-native/pastel": "link:./src/pastel/package.json",
+    "@reason-native/rely": "link:./src/rely/package.json",
+    "@reason-native/console": "link:./src/console/package.json",
+    "@reason-native/pastel-console": "link:./src/pastel-console/package.json",
+    "@reason-native/file-context-printer": "link:./src/file-context-printer/package.json",
+    "@reason-native/tests": "link:./src/tests/package.json"
   }
 }
